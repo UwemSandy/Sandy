@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url(img/background.jpg);
+  background-attachment: fixed;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.user {
+  margin-left: 18px;
+}
+
+.nav-links a:link,
+.nav-links a:visited {
+  text-decoration: none;
+}
+
+.links:link .links a:visited {
+  font-size: 10px;
+  color: #bbbaba;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover .nav-links a:active {
+  color: #ba2912;
+}
+
+menu {
+  display: flex;
+  padding: 0 20px;
+  border-top: 1px solid #bbb;
+}
+
+menu a:link,
+menu a:visited {
+  flex: 1;
+  color: #3b3737;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right: 1px solid #bbb;
+  padding: 20px;
+}
+
+menu a:first-child {
+  border-left: 1px solid #bbb;
+}
+
+menu a:hover,
+menu a:active,
+menu a:first-child {
+  background-image: url(img/nav-bg.jpg);
+  background-size: cover;
+  color: #fff;
+  background-position: center;
+}
+
+.food-section {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+
+figure {
+  background-color: #fff;
+  /* width: 250px; */
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  overflow: hidden;
+}
+
+figure:hover {
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+figure:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+
+figure img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+figure:nth-child(9) img {
+  margin-top: 2px;
+  width: 98%;
+  display: block;
+}
+
+.card {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  text-transform: uppercase;
+  font-size: ;
+  color: #343a40;
+  margin-bottom: 18px;
+}
+
+.card p {
+  color: #95989a;
+  font-size: 16px;
+}
+
+.card button:hover {
+  background-color: #036115;
+}
+
+.btn-area {
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  margin-top: auto;
+}
+
+.card button {
+  background-color: #0a8020;
+  color: #fff;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.deals-section {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: stretch;
+  padding: 40px 70px;
+  column-gap: 20px;
+  row-gap: 25px;
+}
+
+.deals-section h2 {
+  text-align: center;
+  grid-column: 1/-1;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.deals-section h2:before,
+.deals-section h2:after {
+  content: '';
+  width: 50%;
+  height: 1px;
+  background-color: #ddd;
+  position: absolute;
+  top: 50%;
+}
+
+.deals-section h2:before {
+  left: 0;
+}
+
+.deals-section h2:after {
+  right: 0;
+}
+
+.deals-section button {
+  grid-column: 1/-1;
+  background-color: #0a8020;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
